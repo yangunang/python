@@ -8,8 +8,8 @@ import socket
 
 ts = int(time.time())
 servername = socket.gethostbyname(socket.gethostname())
-URL = 'http://192.168.50.131:8110/rmq/consumer/consumerProgress.do'
-grouplist = ['MobileGroup','EmailMsgGroup','alog_ALogConsumerGroup','alog_BLogConsumerGroup','BillEsConsumerGroup','WechatMatchReceivedBillInfoGroup','billHandoutConsumerGroup','billHandoutPayInfoConsumerGroup','wechatMatchCouponMessageReceiveServiceImpl','MqGoodsMessageReceiveServiceGroup','deviceInfoChangeServiceGroup','MqUserIdChangedMessageIntoServiceGroup','MqHistoryBillUserIdChanedMessageReceiveServiceGroup','MqWeChatAttentionInfoMessageReceiveServiceImplGroup','electronicEvidenceInfoGroup','consumerGroupBill','consumerGroupBillGlobal','consumerGroupRuleOnce','terminalCollectConsumerGroup','consumerGroupCouponDelivery','MqHistoryBillUserIdChanedMessageForCouponReceiveServiceGroup','billCoupon']
+URL = 'http://rocketMQ/rmq/consumer/consumerProgress.do'
+grouplist = ['a','b','c']
 
 def push_result(custom,mode):
   payload = [
