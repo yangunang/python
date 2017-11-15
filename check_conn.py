@@ -20,6 +20,6 @@ def push_result(status):
         "tags": " ",
      }]
   r = requests.post("http://127.0.0.1:1988/v1/push", data=json.dumps(payload))
-cmdnetstat = "netstat -antp | grep 113.208.136.26"
+cmdnetstat = "netstat -antp | grep ipaddr"
 p = subprocess.call(cmdnetstat,shell=True,stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 push_result(p)
